@@ -21,7 +21,7 @@ function handleAddClickByChild(){
     addClick();
 }
   return (
-    <>
+    <div className="container">
       <div className="row my-4">
         <div className="col-md-3">
           <input
@@ -78,7 +78,7 @@ function handleAddClickByChild(){
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default GettingData;

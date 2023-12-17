@@ -1,4 +1,5 @@
 import { Trash, PencilSquare } from "react-bootstrap-icons";
+import AddedPeopeles from "./AddedPeopels";
 const TableShowData = ({stdData,handleDataDelete}) => {
    const handleChildDelete = (e) =>{
     handleDataDelete(e.target.id)
@@ -6,9 +7,9 @@ const TableShowData = ({stdData,handleDataDelete}) => {
   return (
     <>
       <div className="container">
-        <h4 className="text-center">Added Peoples</h4>
-        <table className="table">
-          <thead>
+        <AddedPeopeles stdData={stdData}/>
+        <table className="table table-hover table-bordered">
+          <thead className="thead-dark">
             <tr>
               <th>SR. No</th>
               <th>Name</th>

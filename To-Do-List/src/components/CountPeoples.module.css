@@ -1,0 +1,11 @@
+.cartIcon{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.number_count{
+    top: -15px;
+    right: 6px;
+    font-weight: 700;
+    position: absolute;
+    color: red;
+}

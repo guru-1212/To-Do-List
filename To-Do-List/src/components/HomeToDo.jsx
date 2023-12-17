@@ -4,7 +4,6 @@ import HeadingText from "./Heading"
 import ErrMsg from "./ErrMsg"
 import TableShowData from './TableShowData';
 const HomeToDo = () =>{
- 
     const [stdData, setStdData] = React.useState([]);
     const [course, setCourse] = React.useState([]);
     const [workedCompany, setWorkedCompany] = React.useState([]);
@@ -25,8 +24,12 @@ const HomeToDo = () =>{
           course: course,
           workedCompany: workedCompany,
         };
-        setStdData((prev) => [...prev, allData]);
-        console.log(stdData)
+        if (Name === "" || course === "" || workedCompany === "") {
+            alert("plz fill all the Data");
+        } else {
+            setStdData((prev) => [...prev, allData]);
+        }
+        
     }
     function handleDataDelete(e) {
         setStdData((prevData) =>
